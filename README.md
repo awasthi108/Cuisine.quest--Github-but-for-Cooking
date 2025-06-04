@@ -32,12 +32,8 @@ A collaborative recipe platform like GitHub—but for cooking.
 ## 🚀 Getting Started
 
 \`\`\`bash
-git clone https://github.com/yourname/cuisine-quest
-cd client && npm install
-cd ../server && npm install
+git clone https://github.com/awasthi108/Cuisine.quest--Github-but-for-Cooking
+npm install
 
-# Run backend
+# Run 
 npm run dev
-
-# Run frontend
-cd ../client && npm start
