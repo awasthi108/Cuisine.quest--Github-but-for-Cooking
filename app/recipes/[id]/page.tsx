@@ -6,7 +6,7 @@ import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Clock, Users, ChefHat, Play, Pause, RotateCcw, Share2 } from "lucide-react"
+import { Heart, Clock, Users, ChefHat, Play, Pause, RotateCcw, Share2, PanelLeft } from "lucide-react"
 import { getMealById, formatMealIngredients, type Meal } from "@/lib/meal-api"
 import { useToast } from "@/hooks/use-toast"
 
@@ -171,7 +171,9 @@ export default function RecipeDetailPage() {
         {/* Header */}
         <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-sm border-b border-orange-200/50 p-4">
           <div className="flex items-center gap-4">
-            <SidebarTrigger className="hidden md:flex" />
+            <SidebarTrigger className="p-2">
+              <PanelLeft className="w-5 h-5" />
+            </SidebarTrigger>
             <div className="flex-1">
               <h1 className="text-2xl font-bold text-gray-900 line-clamp-1">{recipe.strMeal}</h1>
               <div className="flex items-center gap-4 mt-1">

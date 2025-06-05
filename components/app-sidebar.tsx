@@ -68,7 +68,7 @@ export function AppSidebar() {
   return (
     <Sidebar
       className="border-r border-orange-200/50 bg-white/95 backdrop-blur-sm"
-      collapsible="none"
+      collapsible="offcanvas"
     >
       <SidebarHeader className="p-4 lg:p-6">
         <div
